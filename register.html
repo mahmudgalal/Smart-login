@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chocolate+Classical+Sans&family=Dosis:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="CSS/main.css" />
+  </head>
+  <body>
+    <div
+      class="main w-75 bg-body position-absolute translate-middle top-50 start-50 shadow-lg row rounded overflow-hidden"
+    >
+      <div class="img col-6"></div>
+      <div class="col-lg-6 py-5">
+        <div>
+          <div class="text ps-4">
+            <h3 class="text-center">Colorlib</h3>
+            <span
+              >Lorem ipsum dolor sit amet elit. Sapiente sit aut eos consectetur
+              adipisicing.</span
+            >
+            <div class="name mb-3">
+              <div class="form-floating mb-3 mt-5">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="userName"
+                  placeholder="name"
+                />
+                <label for="userName">Enter Your Name</label>
+                <div class="alert alert-danger d-none" id="inValidName">
+                  Your name is invalid
+                </div>
+              </div>
+            </div>
+            <div class="email mb-3">
+              <div class="form-floating mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="mail"
+                  placeholder="name@example.com"
+                />
+                <label for="mail">Enter Your Email</label>
+                <div class="alert alert-danger d-none" id="inValidMail">
+                  Your Email is invalid
+                </div>
+              </div>
+            </div>
+            <div class="password mb-4">
+              <div class="form-floating mb-3 ">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  placeholder="*******"
+                />
+                <label for="password">Enter Your Password</label>
+                <div class="alert alert-danger d-none" id="inValidPass">Your Password is invalid</div>
+              </div>
+            </div>
+            <div class="text-center text-danger fs-5 pb-4 d-none" id="exists">
+              email is already exists
+            </div>
+
+
+
+            <div class="text-center">
+                <button class="btn-main w-75 border-0 rounded py-2 text-center" id="btnSignUp">
+                  Sign Up
+                </button>
+              <div class="mt-2">
+                <span class="text-dark fw-normal"
+                  >you have account? <a href="index.html">Login</a></span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/register.js"></script>
+  </body>
+</html>

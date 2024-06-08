@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chocolate+Classical+Sans&family=Dosis:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="CSS/main.css" />
+  </head>
+  <body>
+    <div
+      class="main w-75 bg-body position-absolute translate-middle top-50 start-50 shadow-lg row rounded overflow-hidden"
+    >
+      <div class="col-lg-6 py-5">
+        <div>
+          <div class="text pt-5 ps-4">
+            <h3 class="text-center">Colorlib</h3>
+            <span
+              >Lorem ipsum dolor sit amet elit. Sapiente sit aut eos consectetur
+              adipisicing.</span
+            >
+            <div class="email mb-3">
+                <div class="form-floating mb-3 mt-5">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="mail"
+                    placeholder="name@example.com"
+                  />
+                  <label for="mail">Email address</label>
+                  <div class="alert alert-danger d-none" id="inValidMail">Your Email is invalid</div>
+                </div>
+            </div>
+            <div class="password mb-3">
+                <div class="form-floating">
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="password"
+                    placeholder="Password"
+                  />
+                  <label for="password">Password</label>
+                </div>
+                <div class="alert alert-danger d-none" id="inValidPass">Your Password is invalid</div>
+            </div>
+
+
+            <div class="required text-center fs-5 text-danger py-4 d-none" id="required">All inputs are required</div>
+
+
+
+            <div class="text-center">
+                  <button class="btn-main text-center w-75 py-2 rounded" id="btnLogin">
+                    Login
+                  </button>
+              <div class="mt-2">
+                <span class="text-dark fw-normal">Don't have account? <a href="register.html">Register</a></span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="img col-6"></div>
+    </div>
+    
+
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/index.js"></script>
+  </body>
+</html>
